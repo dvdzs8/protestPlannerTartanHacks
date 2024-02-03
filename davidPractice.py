@@ -1,3 +1,5 @@
+TK_SILENCE_DEPRECATION=1
+
 import tkinter as tk
 
 root = tk.Tk()
