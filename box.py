@@ -23,9 +23,10 @@ class Back():
         # self.objBox.pack()
         # self.objectives.pack()
 
-        canvas = tk.Canvas(self.mainframe, width=625, height=475, bg=col1)
+        canvas = tk.Canvas(self.mainframe, bg=col1)
+        canvas.create_rectangle(10,110, 625, 475, outline="black", width=2)
         canvas.pack()
-
+        
 
 
         self.root.mainloop()
