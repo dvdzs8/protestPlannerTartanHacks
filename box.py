@@ -12,30 +12,17 @@ class Back():
         self.root = tk.Tk()
         self.root.geometry('1920x1080')
         self.root.title('Protest Organizor Toolkit')
-        self.mainframe = tk.Frame(self.root, background=col1)
+        self.mainframe = tk.Frame(self.root, background='white')
         self.mainframe.pack(fill='both', expand=True)
-        
-        def create_header():
-            banner = tk.Text(self.root, font = ('Oxygen', 16), bg="blue", pady=0, borderwidth=2, relief="solid", wrap=tk.WORD)
-            banner.pack(pady=10)
-            banner.insert(tk.END, "My Application Header")
-        
-        #banner
-            
-        self.banner = create_header()
-        #self.banner = tk.Text(font = ('Oxygen', 16), bg="blue", pady= 0, borderwidth=2, relief="solid", width=1920, height=100)
-        #self.banner.pack
-
-        
-
-        
-
-
-
 
         #david's bottom 2 squares
 
-        contactBox = tk.Text()
+        self.objBox = tk.Canvas(self.root, bg=col1, width = 625, height = 475)
+        self.objectives = tk.Label(self.objBox, text = "Hello World!", font=('Oxygen', 18))
+        self.objBox.pack()
+        self.objectives.pack()
+        
+
 
         self.root.mainloop()
         return

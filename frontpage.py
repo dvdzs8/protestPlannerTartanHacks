@@ -7,18 +7,18 @@ col2 = "#ffffff"
 class Back():
 
     def __init__(self):
-
         #just the main empty background
         self.root = tk.Tk()
         self.root.geometry('1920x1080')
         self.root.title('Protest Organizor Toolkit')
-        self.mainframe = tk.Frame(self.root, background=col1)
+        self.mainframe = tk.Frame(self.root, background=col2)
         self.mainframe.pack(fill='both', expand=True)
         
         def create_header():
-            banner = tk.Text(self.root, font = ('Oxygen', 16), bg="blue", pady=0, borderwidth=2, relief="solid", wrap=tk.WORD)
-            banner.pack(pady=10)
-            banner.insert(tk.END, "My Application Header")
+            banner = ttk.Entry(self.root, font = ('Oxygen', 16), wrap=tk.WORD, width=1920, height=10)
+            banner.pack(row=1, column=0, pady=10)
+            #banner.pack(pady=10)
+            banner.insert(tk.END,'HI')
         
         #banner
             

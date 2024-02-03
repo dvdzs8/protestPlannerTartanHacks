@@ -15,7 +15,6 @@ root.title("My second GUI I guess")
 label = tk.Label(root, text = "Hello World!", font=('Arial', 18)) #(part of root)
 label.pack(padx = 20, pady = 20) # getting the label into the root using pack(padding)
 
-
 textbox = tk.Text(root, font = ('Oxygen', 16), bg="blue", fg="red", padx = 100, pady= 50, borderwidth=2, relief="solid")
 textbox.pack()
 
