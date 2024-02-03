@@ -4,7 +4,7 @@ import tkinter as tk
 
 root = tk.Tk()
 
-root.geometry("200x200")
+root.geometry("1920x1080")
 root.title("My second GUI I guess")
 
 label = tk.Label(root, text = "Hello World!", font=('Arial', 18)) #(part of root)
