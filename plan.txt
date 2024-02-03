@@ -5,8 +5,8 @@ things to include in a protest planner:
 * files uploaded
 * 
 
-
-
+HTIS IS DAVID'S TESTST ALALALALALALALALALALALALALAL
+YAH YAH YAH. ALL I EVER WANTE WASD A ROLLIE ROLLIE
 next steps
 
 research GUI choose which one. pycharm, tkinter, pyside
