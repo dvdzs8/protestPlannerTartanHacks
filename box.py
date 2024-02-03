@@ -64,12 +64,6 @@ class Back():
 
         #banner
         self.banner = create_header()
-        
-
-
-
-
-
         #david's bottom 2 square
         self.root.mainloop()
         return
