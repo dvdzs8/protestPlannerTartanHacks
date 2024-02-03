@@ -5,8 +5,8 @@ def save_file(contact: dict, filename: str):
                 json.dump(contact, f)
 
 def signups(name, email):
-    name = input("What is your contact name? ")
-    email = input("What is your contact's email?")
+    # name = input("What is your contact name? ")
+    # email = input("What is your contact's email?")
 
     #defining an object
     contact = {

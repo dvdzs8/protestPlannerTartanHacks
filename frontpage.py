@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-import contacts
+from contacts import signups
 
 col1 = "#c8c8a9" #background of squares
 col2 = "#ffcdad"  #background 
@@ -25,7 +25,7 @@ class Back():
             text = ttk.Label(self.canvas,text=text1, background=col1, font=("Oxygen", 20))
             text.pack()
 
-        self.objBox = self.canvas.create_rectangle(10, 110, 625, 475, outline="black", width=2)
+        self.objBox = self.canvas.create_rectangle(10, 100, 635, 400, outline="black", width=2)
         self.objTitle = tk.Label(self.canvas, text = "Objectives", font=('Oxygen', 18))
         self.objTitle.place(x = 20, y = 120)
         self.obj1 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
@@ -45,6 +45,22 @@ class Back():
         self.con3 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
         self.con3.place(x = 20, y = 685)
 
+        self.locBox = self.canvas.create_rectangle(645, 100, 1270, 400, outline="black", width=2)
+        self.locTitle = tk.Label(self.canvas, text = "Location", font=('Oxygen', 18))
+        self.locTitle.place(x = 665, y = 120)
+        self.locText = tk.Text(self.canvas, font = ("Oxygen", 14))
+        self.locText.place(x = 665, y = 160, width = 580, height = 220)
+
+        self.dateBox = self.canvas.create_rectangle(645, 450, 1270, 750, outline="black", width=2)
+        self.dateTitle = tk.Label(self.canvas, text = "Key Dates", font=('Oxygen', 18))
+        self.dateTitle.place(x = 665, y = 470)
+        self.date1 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.date1.place(x = 665, y = 515)
+        self.date2 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.date2.place(x = 665, y = 600)
+        self.date3 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.date3.place(x = 665, y = 685)
+
         #banner
         self.banner = create_header()
         
@@ -56,20 +72,24 @@ class Back():
         #sign ups
 
         # Create a button
+        self.signTitle = tk.Label(self.canvas, text = "Sign up!", font=('Oxygen', 18))
+        self.signTitle.place(x = 1050, y = 130)
         name = ttk.Entry(self.root)
         label = tk.Label(self.root, text="Name:")
-        label_window=self.canvas.create_window(1300,130, anchor=tk.NW, window=label)
-        input_window = self.canvas.create_window(1300,150, anchor=tk.NW, window=name)
-        button = tk.Button(self.canvas, text="Click me!", command=contacts.signups)
+        label_window=self.canvas.create_window(1050,180, anchor=tk.NW, window=label)
+        input_window = self.canvas.create_window(1200,180, anchor=tk.NW, window=name)
+        
         # Place the button on the canvas at coordinates (50, 50)
-        button_window = self.canvas.create_window(50, 50, anchor=tk.NW, window=button)
+        
         # Create a label for displaying messages
 
+        email = ttk.Entry(self.root)
+        label_e = tk.Label(self.root, text="Email:")
+        label_window_e=self.canvas.create_window(1050,230, anchor=tk.NW, window=label_e)
+        input_window_e = self.canvas.create_window(1200,230, anchor=tk.NW, window=email)
 
-
-
-
-
+        button = tk.Button(self.canvas, text="Done!", command=signups(name.get(),email.get()))
+        button_window = self.canvas.create_window(1300, 300, anchor=tk.NW, window=button)
 
         #david's bottom 2 square
         self.root.mainloop()

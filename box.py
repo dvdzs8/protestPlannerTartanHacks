@@ -45,6 +45,22 @@ class Back():
         self.con3 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
         self.con3.place(x = 20, y = 685)
 
+        self.locBox = self.canvas.create_rectangle(645, 100, 1270, 400, outline="black", width=2)
+        self.locTitle = tk.Label(self.canvas, text = "Location", font=('Oxygen', 18))
+        self.locTitle.place(x = 665, y = 120)
+        self.locText = tk.Text(self.canvas, font = ("Oxygen", 14))
+        self.locText.place(x = 665, y = 160, width = 580, height = 220)
+
+        self.dateBox = self.canvas.create_rectangle(645, 450, 1270, 750, outline="black", width=2)
+        self.dateTitle = tk.Label(self.canvas, text = "Key Dates", font=('Oxygen', 18))
+        self.dateTitle.place(x = 665, y = 470)
+        self.date1 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.date1.place(x = 665, y = 515)
+        self.date2 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.date2.place(x = 665, y = 600)
+        self.date3 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.date3.place(x = 665, y = 685)
+
 
         #banner
         self.banner = create_header()
