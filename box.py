@@ -24,10 +24,17 @@ class Back():
             text = ttk.Label(self.canvas,text=text1, background=col1, font=("Oxygen", 20))
             text.pack()
 
+
         self.objBox = self.canvas.create_rectangle(10, 110, 625, 475, outline="black", width=2)
-        self.objTitle = tk.Label(self.canvas, text = "Objectives", font = ('Oxygen', 18))
-        self.objTitle.pack()
+        self.objTitle = tk.Label(self.canvas, text = "Objectives", font=('Arial', 18))
+        self.objTitle.place(x = 20, y = 120)
+
+        #banner
+        self.banner = create_header()
         
+
+
+
 
 
         #david's bottom 2 square

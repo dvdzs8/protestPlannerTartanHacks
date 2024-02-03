@@ -29,11 +29,12 @@ class Back():
 
         #banner
         self.banner = create_header()
-        self.obj_label=create_label("Objectives",2,3)
-
         
-        self.side = self.canvas.create_rectangle(1280, 80, 640, 800, outline="black", width=10)
-        self.side.pack()
+
+        #side panel
+        self.canvas.create_rectangle(1400, 100, 640, 800, outline="black", width=10)
+
+        self.obj_label=create_label("Objectives",5,5)
 
         
 
