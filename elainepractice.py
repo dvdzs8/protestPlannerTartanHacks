@@ -25,7 +25,7 @@ class App():
         set_color_button.grid(row=2, column=1, pady=10)
         
         self.reverse_text = ttk.Button(self.mainframe, text = "Reverse Test", command=self.reverse)
-        self.reverse_text.grid (row=3, column=0, sticky='NWES', command=self.reverse)
+        self.reverse_text.grid (row=3, column=0, sticky='NWES', pady=10)
         self.root.mainloop()
         return
     
