@@ -25,9 +25,26 @@ class Back():
             text.pack()
 
 
-        self.objBox = self.canvas.create_rectangle(10, 110, 625, 475, outline="black", width=2)
-        self.objTitle = tk.Label(self.canvas, text = "Objectives", font=('Arial', 18))
+        self.objBox = self.canvas.create_rectangle(10, 100, 635, 400, outline="black", width=2)
+        self.objTitle = tk.Label(self.canvas, text = "Objectives", font=('Oxygen', 18))
         self.objTitle.place(x = 20, y = 120)
+        self.obj1 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.obj1.place(x = 20, y = 165)
+        self.obj2 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.obj2.place(x = 20, y = 250)
+        self.obj3 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.obj3.place(x = 20, y = 335)
+
+        self.contactBox = self.canvas.create_rectangle(10, 450, 635, 750, outline="black", width=2)
+        self.conTitle = tk.Label(self.canvas, text = "Contacts", font=('Oxygen', 18))
+        self.conTitle.place(x = 20, y = 470)
+        self.con1 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.con1.place(x = 20, y = 515)
+        self.con2 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.con2.place(x = 20, y = 600)
+        self.con3 = tk.Entry(self.canvas, font =("Oxygen", 14), width = 53)
+        self.con3.place(x = 20, y = 685)
+
 
         #banner
         self.banner = create_header()
