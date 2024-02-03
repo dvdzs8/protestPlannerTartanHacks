@@ -1,10 +1,12 @@
 import tkinter as tk
 from tkinter import ttk
 
-col1 = "#ffffdd" #background
-col2 = "#ffffff"
 
 class Back():
+
+    col1 = "#ffffdd" #background
+col2 = "#ffffff"
+
     def __init__(self):
 
         #just the main empty background
