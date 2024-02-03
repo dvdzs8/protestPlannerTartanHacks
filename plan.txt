@@ -1,0 +1,25 @@
+things to include in a protest planner:
+* legal tips
+* an internet search
+* emergency response
+* files uploaded
+* 
+
+
+
+next steps
+
+research GUI choose which one. pycharm, tkinter, pyside
+
+learn GUI together
+
+research what we want to include
+
+draw out what it will look like (no colors. basic shapes)
+
+how can users upload their own documents (path)
+
+divide into physical on screen sections. separate functions files (depends on GUI)
+    literally. like code wise make rectangles for where its gonna be on screen
+
+get to work yassssss
