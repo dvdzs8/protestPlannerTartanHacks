@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 
-col1 = "#ffffdd" #background
-col2 = "#ffffff"
+col1 = "#c8c8a9" #background of squares
+col2 = "#ffcdad"  #background 
+col3 = '#fe4365' #header
 
 class Back():
 
@@ -17,11 +18,14 @@ class Back():
 
         #david's bottom 2 squares
 
-        self.objBox = tk.Canvas(self.root, bg=col1, width = 625, height = 475)
-        self.objectives = tk.Label(self.objBox, text = "Hello World!", font=('Oxygen', 18))
-        self.objBox.pack()
-        self.objectives.pack()
-        
+        # self.objBox = tk.Canvas(self.root, bg=col2, width = 10, height = 10)
+        # self.objectives = tk.Label(self.objBox, text = "Hello World!", font=('Oxygen', 18))
+        # self.objBox.pack()
+        # self.objectives.pack()
+
+        canvas = tk.Canvas(self.mainframe, width=625, height=475, bg=col1)
+        canvas.pack()
+
 
 
         self.root.mainloop()

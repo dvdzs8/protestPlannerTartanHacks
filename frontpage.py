@@ -1,8 +1,9 @@
 import tkinter as tk
 from tkinter import ttk
 
-col1 = "#ffffdd" #background
-col2 = "#ffffff"
+col1 = "#c8c8a9" #background of squares
+col2 = "#ffcdad"  #background 
+col3 = '#fe4365' #header
 
 class Back():
 
@@ -15,10 +16,13 @@ class Back():
         self.mainframe.pack(fill='both', expand=True)
         
         def create_header():
-            banner = ttk.Entry(self.root, font = ('Oxygen', 16), wrap=tk.WORD, width=1920, height=10)
-            banner.pack(row=1, column=0, pady=10)
-            #banner.pack(pady=10)
-            banner.insert(tk.END,'HI')
+            banner = tk.Text(self.mainframe, padx=10, pady=10, font = ("Oxygen", 16), bg=col3, relief="solid", borderwidth=2, wrap=tk.WORD, width=100, height=1)
+            #banner.grid(row=1, column=0, sticky='NWES') #padding of 10 pixels. both above and below
+            # banner = ttk.Entry(self.root, font = ('Oxygen', 16), wrap=tk.WORD, width=1920, height=10)
+            # banner.pack(row=1, column=0, pady=10)
+            banner.pack()
+            banner.insert(tk.END, "Title and organizers: ")
+            # banner.insert(tk.END,'HI')
         
         #banner
             
