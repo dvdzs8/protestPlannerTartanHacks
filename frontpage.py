@@ -83,18 +83,18 @@ class Back():
         
 
         #side panel
-        self.canvas.create_rectangle(1000, 100, 1500, 900, outline="black", width=5)
+        #self.canvas.create_rectangle(1000, 100, 1500, 900, outline="black", width=5)
 
 
         #sign ups
 
         # Create a button
         self.signTitle = tk.Label(self.canvas, text = "Sign up!", font=('Oxygen', 18))
-        self.signTitle.place(x = 1050, y = 130)
+        self.signTitle.place(x = 1300, y = 130)
         name = ttk.Entry(self.root)
         label = tk.Label(self.root, text="Name:")
-        label_window=self.canvas.create_window(1050,180, anchor=tk.NW, window=label)
-        input_window = self.canvas.create_window(1200,180, anchor=tk.NW, window=name)
+        label_window=self.canvas.create_window(1300,180, anchor=tk.NW, window=label)
+        input_window = self.canvas.create_window(1350,180, anchor=tk.NW, window=name)
         
         # Place the button on the canvas at coordinates (50, 50)
         
@@ -102,11 +102,11 @@ class Back():
 
         email = ttk.Entry(self.root)
         label_e = tk.Label(self.root, text="Email:")
-        label_window_e=self.canvas.create_window(1050,230, anchor=tk.NW, window=label_e)
-        input_window_e = self.canvas.create_window(1200,230, anchor=tk.NW, window=email)
+        label_window_e=self.canvas.create_window(1300,230, anchor=tk.NW, window=label_e)
+        input_window_e = self.canvas.create_window(1350,230, anchor=tk.NW, window=email)
 
         button = tk.Button(self.canvas, text="Done!", command=signups(name.get(),email.get()))
-        button_window = self.canvas.create_window(1300, 300, anchor=tk.NW, window=button)
+        button_window = self.canvas.create_window(1350, 300, anchor=tk.NW, window=button)
 
         #david's bottom 2 square
         self.root.mainloop()
