@@ -3,6 +3,7 @@
 A functional and focused planner for organizers in social activism.
 
 Youtube Demo: https://www.youtube.com/watch?v=gpu6wALpU54
+
 Hackathon Slideshow: https://docs.google.com/presentation/d/1cIk48pBF2QwHxnMPM4ew1N6Ixgvoou7swow9jewxSH4/edit?usp=sharing
 
 # Instructions
